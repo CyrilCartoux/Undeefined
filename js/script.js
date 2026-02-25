@@ -1,152 +1,87 @@
-// Effet de frappe pour les commandes
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = ''; // Vide le contenu initial
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        } else {
-            // Ajoute le curseur uniquement une fois le texte complet
-            let cursor = document.createElement('span');
-            cursor.className = 'cursor';
-            cursor.textContent = '|';
-            element.appendChild(cursor);
-            
-            setInterval(() => {
-                cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
-            }, 500);
+(function () {
+  'use strict';
 
-            // Affiche le contenu de la section après un court délai
-            setTimeout(() => {
-                const sectionContent = element.parentElement.querySelector('.section-content');
-                if (sectionContent) {
-                    sectionContent.classList.remove('hidden');
-                    // Petit délai pour que le display: none soit bien retiré avant l'animation
-                    setTimeout(() => {
-                        sectionContent.classList.add('visible');
-                    }, 50);
-                }
-            }, 500);
-        }
-    }
-    
-    type();
-}
+  var DURATION = 1500;
+  var EASING = function (t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; };
 
-// Animation du curseur
-function blinkCursor(element) {
-    let cursor = document.createElement('span');
-    cursor.className = 'cursor';
-    cursor.textContent = '|';
-    element.appendChild(cursor);
-    
-    setInterval(() => {
-        cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
-    }, 500);
-}
+  function animateValue(el) {
+    var target = parseInt(el.dataset.target, 10);
+    var prefix = el.dataset.prefix || '';
+    var suffix = el.dataset.suffix || '';
+    var start = 0;
+    var startTime = null;
 
-// Initialisation des effets de frappe
-document.addEventListener('DOMContentLoaded', () => {
-    // Menu mobile
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const body = document.body;
-
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    });
-
-    // Configuration de l'Intersection Observer
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Affiche la section
-                entry.target.classList.add('visible');
-                
-                // Déclenche l'animation de la commande
-                const typingText = entry.target.querySelector('.typing-text');
-                if (typingText && !typingText.dataset.animated) {
-                    typingText.dataset.animated = 'true';
-                    const text = typingText.textContent;
-                    typingText.textContent = '';
-                    
-                    // Délai spécifique pour la section services
-                    const delay = entry.target.id === 'services' ? 3000 : 0;
-                    
-                    setTimeout(() => {
-                        typeWriter(typingText, text);
-                    }, delay);
-                }
-            }
-        });
-    }, observerOptions);
-
-    // Observer chaque section cachée
-    document.querySelectorAll('.hidden-section').forEach(section => {
-        observer.observe(section);
-    });
-
-    // Animer uniquement la première section (whoami) immédiatement
-    const firstSection = document.querySelector('.terminal-section:not(.hidden-section)');
-    if (firstSection) {
-        const firstTypingText = firstSection.querySelector('.typing-text');
-        if (firstTypingText) {
-            const firstText = firstTypingText.textContent;
-            firstTypingText.textContent = '';
-            typeWriter(firstTypingText, firstText);
-        }
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var elapsed = timestamp - startTime;
+      var progress = Math.min(elapsed / DURATION, 1);
+      var eased = EASING(progress);
+      var current = Math.round(start + (target - start) * eased);
+      el.textContent = prefix + current + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target + suffix;
     }
 
-    // Fermer le menu quand on clique sur un lien
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-            body.style.overflow = '';
-        });
+    requestAnimationFrame(step);
+  }
+
+  function initCounters() {
+    var counters = document.querySelectorAll('.count[data-target]');
+    if (!counters.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        if (el.dataset.animated === 'true') return;
+        el.dataset.animated = 'true';
+        animateValue(el);
+      });
+    }, { rootMargin: '0px 0px -80px 0px', threshold: 0.1 });
+
+    counters.forEach(function (el) { return observer.observe(el); });
+  }
+
+  function initNav() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (!menuToggle || !navLinks) return;
+
+    menuToggle.addEventListener('click', function () {
+      var open = !navLinks.classList.contains('is-open');
+      navLinks.classList.toggle('is-open', open);
+      menuToggle.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
     });
 
-    // Fermer le menu quand on clique en dehors
-    document.addEventListener('click', (e) => {
-        if (navLinks.classList.contains('active') && 
-            !e.target.closest('.nav') && 
-            !e.target.closest('.menu-toggle')) {
-            menuToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-            body.style.overflow = '';
-        }
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
     });
+  }
 
-    // Ajouter un effet de glitch aléatoire sur les liens
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            const glitchText = link.textContent;
-            const glitchChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
-            
-            let glitchInterval = setInterval(() => {
-                const randomIndex = Math.floor(Math.random() * glitchText.length);
-                const randomChar = glitchChars[Math.floor(Math.random() * glitchChars.length)];
-                const newText = glitchText.substring(0, randomIndex) + 
-                               randomChar + 
-                               glitchText.substring(randomIndex + 1);
-                link.textContent = newText;
-            }, 50);
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
 
-            setTimeout(() => {
-                clearInterval(glitchInterval);
-                link.textContent = glitchText;
-            }, 300);
-        });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = (form.querySelector('[name="name"]') || {}).value || '';
+      var email = (form.querySelector('[name="email"]') || {}).value || '';
+      var message = (form.querySelector('[name="message"]') || {}).value || '';
+      var subject = 'Contact UNDEEFINED — ' + (name || 'Sans nom');
+      var body = (message || '') + '\n\n— ' + (name || '') + '\n' + (email || '');
+      var mailto = 'mailto:cyrilcartoux13@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      window.location.href = mailto;
     });
-}); 
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initCounters();
+    initNav();
+    initContactForm();
+  });
+})();

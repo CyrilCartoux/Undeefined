@@ -3,238 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Développeur web freelance spécialisé dans la création de sites web modernes et performants. Services de développement sur-mesure, refonte et optimisation de sites web.">
-    <meta name="keywords" content="développeur web, blockchain, smart contracts, React, Next.js, TypeScript">
+    <meta name="description" content="Agents IA sur-mesure pour automatiser vos processus. Audit, build, deploy. Résultats mesurables.">
+    <meta name="keywords" content="agents IA, automatisation, consulting technique, déploiement">
     <meta name="author" content="UNDEEFINED">
-    <meta property="og:title" content="UNDEEFINED | Création de Sites Web Modernes">
-    <meta property="og:description" content="Développeur web freelance spécialisé dans la création de sites web modernes et performants.">
+    <meta property="og:title" content="UNDEEFINED | Agents IA & Automatisation">
+    <meta property="og:description" content="Agents IA sur-mesure. Les résultats parlent d'eux-mêmes.">
     <meta property="og:type" content="website">
-    <title>UNDEEFINED | Création de Sites Web Modernes</title>
-    
-    <!-- Preload critical resources -->
+    <title>UNDEEFINED | Agents IA & Automatisation</title>
+
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="preload" href="js/script.js" as="script">
-    
-    <!-- System fonts first -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-    </style>
-    
-    <!-- Custom fonts -->
+
+    <!-- Titres: Outfit (sharp, technique) · Corps: Inter · Terminal: JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <span class="logo-text">UNDEEFINED</span>
-            </div>
+        <nav class="nav container">
+            <a href="#" class="logo">UNDEEFINED</a>
             <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
                 <span class="menu-icon"></span>
             </button>
             <div class="nav-links">
-                <ul>
-                    <li><a href="#services">$ services</a></li>
-                    <li><a href="#projects">$ projets</a></li>
-                    <li><a href="#contact">$ contact</a></li>
-                </ul>
+                <a href="#douleur">Problème</a>
+                <a href="#agents">Agents</a>
+                <a href="#resultats">Résultats</a>
+                <a href="#process">Process</a>
+                <a href="#cas-usage">Cas d'usage</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">Parlons projet</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="terminal-section hero">
-            <h2 class="typing-text">whoami</h2>
-            <div class="section-content hidden">
-                <p>Nous sommes <strong>UNDEEFINED</strong>, un studio de développement web dédié à transformer vos idées en expériences numériques exceptionnelles.</p>
-                <br>
-                <p class="subtitle">> Code that connects.</p>
+        <!-- 1. Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="dot-grid"></div>
+            </div>
+            <div class="hero-content container">
+                <p class="hero-label font-mono">agents déployés · résultats mesurables</p>
+                <h1 class="hero-title">Des agents qui travaillent.<br>Pas des slides.</h1>
+                <p class="hero-subtitle">Audit, build, deploy. Automatisation sur-mesure pour équipes techniques et PME.</p>
+                <div class="hero-media">
+                    <div class="hero-video-wrap card">
+                        <video class="hero-video" src="assets/undeefined.mp4" muted loop playsinline autoplay></video>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Audit gratuit · 30 min</a>
+                    <a href="#resultats" class="btn btn-ghost">Voir les résultats</a>
+                </div>
+            </div>
+            <div class="hero-terminal" aria-hidden="true">
+                <pre class="font-mono"><code><span class="code-prompt">$</span> status --agents
+<span class="code-green">●</span> support@  <span class="code-muted">live</span>
+<span class="code-green">●</span> qualify@ <span class="code-muted">live</span>
+<span class="code-green">●</span> ops@     <span class="code-muted">live</span></code></pre>
             </div>
         </section>
 
-        <section id="services" class="terminal-section hidden-section">
-            <h2 class="typing-text">ls ./services</h2>
-            <div class="section-content hidden">
-                <div class="service-card">
-                    <div class="service-header">
-                        <h3>web-dev</h3>
-                        <span class="service-status">[active]</span>
-                    </div>
-                    <p class="service-description">> Développement de sites web modernes et évolutifs, optimisés pour des performances exceptionnelles.</p>
-                    <div class="service-stack">
-                        <span class="stack-label">$ stack</span>
-                        <ul class="service-features">
-                            <li>React / Next.js / Angular</li>
-                            <li>TypeScript</li>
-                            <li>Node.js</li>
-                            <li>SEO & Performance</li>
-                            <li>Responsive Design</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-header">
-                        <h3>smart-contracts</h3>
-                        <span class="service-status">[active]</span>
-                    </div>
-                    <p class="service-description">> Développement et audit de smart contracts sur la blockchain Ethereum.</p>
-                    <div class="service-stack">
-                        <span class="stack-label">$ stack</span>
-                        <ul class="service-features">
-                            <li>Solidity</li>
-                            <li>Ethers.js | WAGMI | Web3.js</li>
-                            <li>Hardhat | Foundry</li>
-                            <li>Security Audits</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-header">
-                        <h3>consulting</h3>
-                        <span class="service-status">[active]</span>
-                    </div>
-                    <p class="service-description">> Consulting technique et expertise en développement logiciel.</p>
-                    <div class="service-stack">
-                        <span class="stack-label">$ stack</span>
-                        <ul class="service-features">
-                            <li>Architecture Logicielle</li>
-                            <li>Sécurité & Performance</li>
-                            <li>Code Review</li>
-                            <li>Formation & Mentoring</li>
-                        </ul>
-                    </div>
+        <!-- 2. Douleur -->
+        <section class="section section-douleur" id="douleur">
+            <div class="container">
+                <h2 class="section-title">Votre équipe perd <span class="text-accent count" data-target="15" data-suffix="h">0</span> par semaine sur des tâches répétitives.</h2>
+                <p class="section-subtitle">Tickets, qualification de leads, rapports, suivi. Des heures qui s’accumulent alors que l’IA peut les prendre en charge — correctement intégrée.</p>
+            </div>
+        </section>
+
+        <!-- 3. Ce que je fais - 4 types d'agents -->
+        <section class="section section-agents" id="agents">
+            <div class="container">
+                <h2 class="section-title">Ce que je fais</h2>
+                <p class="section-subtitle">Quatre familles d’agents, déployés en production. Chacun avec un périmètre clair et des métriques.</p>
+                <div class="agents-grid">
+                    <article class="card agent-card">
+                        <div class="agent-icon font-mono">$</div>
+                        <h3 class="agent-title">Support & tri</h3>
+                        <p class="agent-desc">Classification de tickets, premières réponses, escalade intelligente. Moins de file d’attente, plus de résolution au premier contact.</p>
+                        <span class="badge badge-live">● Live</span>
+                    </article>
+                    <article class="card agent-card">
+                        <div class="agent-icon font-mono">$</div>
+                        <h3 class="agent-title">Qualification leads</h3>
+                        <p class="agent-desc">Enrichissement et scoring des leads à partir de vos critères. Sync CRM, pas de doublons, décisions basées sur la donnée.</p>
+                        <span class="badge badge-live">● Live</span>
+                    </article>
+                    <article class="card agent-card">
+                        <div class="agent-icon font-mono">$</div>
+                        <h3 class="agent-title">Ops & rapports</h3>
+                        <p class="agent-desc">Agrégation de données, rapports récurrents, alertes. Une seule source de vérité, moins de copier-coller entre outils.</p>
+                        <span class="badge badge-live">● Live</span>
+                    </article>
+                    <article class="card agent-card">
+                        <div class="agent-icon font-mono">$</div>
+                        <h3 class="agent-title">Workflows métier</h3>
+                        <p class="agent-desc">Process sur-mesure : approbations, relances, synchronisation entre vos apps. Logique métier codée, pas du no-code fragile.</p>
+                        <span class="badge badge-live">● Live</span>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="terminal-section hidden-section">
-            <h2 class="typing-text">ls ./projects</h2>
-            <div class="section-content hidden">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/portfolio.jpg" alt="Portfolio Project">
+        <!-- 4. Résultats - métriques + compteur -->
+        <section class="section section-resultats" id="resultats">
+            <div class="container">
+                <h2 class="section-title">Résultats</h2>
+                <p class="section-subtitle">Chiffres réels, projets livrés. Pas de promesses vagues.</p>
+                <div class="metrics-grid">
+                    <div class="card metric-card">
+                        <span class="metric-value count" data-target="70" data-suffix="%">0</span>
+                        <span class="metric-label">réduction temps de tri (support)</span>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>portfolio.js</h3>
-                            <span class="project-status">[active]</span>
-                        </div>
-                        <p class="project-description">> Site portfolio moderne construit avec Next.js et TypeScript, mettant en avant une expérience utilisateur immersive et un design responsive.</p>
-                        <div class="project-stack">
-                            <span class="stack-label">$ stack</span>
-                            <ul class="project-features">
-                                <li>Next.js</li>
-                                <li>TypeScript</li>
-                                <li>Tailwind CSS</li>
-                                <li>Framer Motion</li>
-                            </ul>
-                        </div>
+                    <div class="card metric-card">
+                        <span class="metric-value count" data-target="40" data-suffix="h">0</span>
+                        <span class="metric-label">économisées / mois (qualif leads)</span>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/ecommerce.jpg" alt="E-commerce Project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>marketplace.py</h3>
-                            <span class="project-status">[active]</span>
-                        </div>
-                        <p class="project-description">> Plateforme e-commerce innovante intégrant la blockchain pour des transactions sécurisées et transparentes.</p>
-                        <div class="project-stack">
-                            <span class="stack-label">$ stack</span>
-                            <ul class="project-features">
-                                <li>Python</li>
-                                <li>Django</li>
-                                <li>Solidity</li>
-                                <li>Web3.js</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/dashboard.jpg" alt="Dashboard Project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>dashboard.js</h3>
-                            <span class="project-status">[active]</span>
-                        </div>
-                        <p class="project-description">> Dashboard analytique en temps réel avec visualisation de données et tableaux de bord personnalisables.</p>
-                        <div class="project-stack">
-                            <span class="stack-label">$ stack</span>
-                            <ul class="project-features">
-                                <li>React</li>
-                                <li>D3.js</li>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
+                    <div class="card metric-card">
+                        <span class="metric-value count" data-target="3" data-suffix="x">0</span>
+                        <span class="metric-label">plus de capacité sans recruter</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="terminal-section hidden-section">
-            <h2 class="typing-text">send -m "Hello"</h2>
-            <div class="section-content hidden">
-                <div class="contact-terminal">
-                    <p class="contact-prompt">> Ready to start your project?</p>
-                    <div class="contact-info">
-                        <div class="contact-line">
-                            <span class="contact-label">$ email</span>
-                            <a href="mailto:contact@undeefined.dev" class="contact-value">contact@undeefined.dev</a>
-                        </div>
-                        <div class="contact-line">
-                            <span class="contact-label">$ github</span>
-                            <a href="https://github.com/CyrilCartoux" target="_blank" class="contact-value">@CyrilCartoux</a>
-                        </div>
-                        <div class="contact-line">
-                            <span class="contact-label">$ location</span>
-                            <span class="contact-value">Aix-en-Provence, France</span>
-                        </div>
+        <!-- 5. Process -->
+        <section class="section section-process" id="process">
+            <div class="container">
+                <h2 class="section-title">Process</h2>
+                <p class="section-subtitle">Linéaire. Pas de blabla.</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="process-num font-mono">01</span>
+                        <h3 class="process-title">Audit</h3>
+                        <p class="process-desc">Cartographie des tâches répétitives, volumes, outils. Livrable : périmètre et ROI estimé.</p>
                     </div>
+                    <span class="process-arrow" aria-hidden="true">→</span>
+                    <div class="process-step">
+                        <span class="process-num font-mono">02</span>
+                        <h3 class="process-title">Build</h3>
+                        <p class="process-desc">Développement de l’agent, intégrations, tests. Vous validez à chaque étape.</p>
+                    </div>
+                    <span class="process-arrow" aria-hidden="true">→</span>
+                    <div class="process-step">
+                        <span class="process-num font-mono">03</span>
+                        <h3 class="process-title">Deploy</h3>
+                        <p class="process-desc">Mise en production, monitoring, formation équipe. Handover propre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Cas d'usage -->
+        <section class="section section-cas" id="cas-usage">
+            <div class="container">
+                <h2 class="section-title">Cas d’usage</h2>
+                <p class="section-subtitle">Par secteur. Même logique : automatiser ce qui peut l’être, sans usine à gaz.</p>
+                <div class="cas-grid">
+                    <article class="card cas-card">
+                        <h3 class="cas-title">E‑commerce</h3>
+                        <p class="cas-desc">Support client, gestion retours, qualification demandes B2B. Réduction des délais de réponse et des doublons.</p>
+                    </article>
+                    <article class="card cas-card">
+                        <h3 class="cas-title">SaaS</h3>
+                        <p class="cas-desc">Qualification leads, onboarding automatisé, health checks. Données à jour dans le CRM, moins de tâches manuelles.</p>
+                    </article>
+                    <article class="card cas-card">
+                        <h3 class="cas-title">PME</h3>
+                        <p class="cas-desc">Rapports récurrents, relances, synchronisation entre outils (facturation, stock). Un seul flux, moins d’erreurs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Pricing -->
+        <section class="section section-pricing" id="pricing">
+            <div class="container">
+                <h2 class="section-title">Pricing</h2>
+                <p class="section-subtitle">Offres claires. Pas de tableau à 20 lignes.</p>
+                <div class="pricing-grid">
+                    <article class="card pricing-card">
+                        <h3 class="pricing-name">Audit</h3>
+                        <p class="pricing-desc">Cartographie + périmètre + ROI. Livrable en 1–2 semaines.</p>
+                        <p class="pricing-price"><span class="count" data-target="1500" data-prefix="" data-suffix="€">0</span></p>
+                        <a href="#contact" class="btn btn-ghost">Réserver</a>
+                    </article>
+                    <article class="card pricing-card pricing-card-featured">
+                        <span class="pricing-badge">Recommandé</span>
+                        <h3 class="pricing-name">Build + Deploy</h3>
+                        <p class="pricing-desc">Un agent sur-mesure, de l’architecture au déploiement. Suivi 30 j.</p>
+                        <p class="pricing-price">Sur devis</p>
+                        <a href="#contact" class="btn btn-primary">Parlons projet</a>
+                    </article>
+                    <article class="card pricing-card">
+                        <h3 class="pricing-name">Maintenance</h3>
+                        <p class="pricing-desc">Évolutions, correctifs, monitoring. Forfait mensuel.</p>
+                        <p class="pricing-price">Sur devis</p>
+                        <a href="#contact" class="btn btn-ghost">En discuter</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ -->
+        <section class="section section-faq" id="faq">
+            <div class="container container-narrow">
+                <h2 class="section-title">FAQ</h2>
+                <div class="faq-list">
+                    <details class="card faq-item">
+                        <summary class="faq-question">Combien de temps pour un premier agent ?</summary>
+                        <p class="faq-answer">Entre 4 et 8 semaines selon la complexité et les intégrations. L’audit fixe un planning réaliste.</p>
+                    </details>
+                    <details class="card faq-item">
+                        <summary class="faq-question">Vous travaillez avec quelles stack / APIs ?</summary>
+                        <p class="faq-answer">Node/TypeScript, Python, intégrations REST et webhooks. CRM (HubSpot, Pipedrive…), outils de support, bases de données. On s’adapte à votre existant.</p>
+                    </details>
+                    <details class="card faq-item">
+                        <summary class="faq-question">Où sont hébergés les agents ?</summary>
+                        <p class="faq-answer">Chez vous (VPC, serveur) ou sur une infra cloud (AWS, GCP, etc.). Pas de lock-in : vous gardez le code et la main.</p>
+                    </details>
+                    <details class="card faq-item">
+                        <summary class="faq-question">Et la confidentialité des données ?</summary>
+                        <p class="faq-answer">Les données restent dans votre périmètre. Pas d’entraînement sur vos données pour des modèles tiers. Conformité RGPD prise en compte dès la conception.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CTA final -->
+        <section class="section section-cta" id="contact">
+            <div class="container container-narrow">
+                <h2 class="section-title">Parlons de votre projet</h2>
+                <p class="section-subtitle">Un call de 30 min pour comprendre votre contexte et voir si on peut avancer ensemble. Sans engagement.</p>
+                <div class="cta-box card">
+                    <p class="cta-contact">
+                        Ou directement : <a href="tel:+33612457114">06 12 45 71 14</a> · <a href="mailto:cyrilcartoux13@gmail.com">cyrilcartoux13@gmail.com</a>
+                    </p>
+                    <form class="cta-form" id="contact-form" action="#" method="get">
+                        <div class="cta-form-row">
+                            <label for="contact-name" class="visually-hidden">Nom</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Nom" required autocomplete="name">
+                            <label for="contact-email" class="visually-hidden">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Email" required autocomplete="email">
+                        </div>
+                        <label for="contact-message" class="visually-hidden">Message</label>
+                        <textarea id="contact-message" name="message" placeholder="Votre message…" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-terminal">
-                <p class="footer-command">> exit</p>
-                <p class="footer-text">¯\_(ツ)_/¯ // this is fine</p>
+        <div class="container footer-inner">
+            <p class="footer-brand font-mono">UNDEEFINED</p>
+            <div class="footer-links">
+                <a href="https://github.com/CyrilCartoux" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/cyril-c-a6a3351a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:cyrilcartoux13@gmail.com">Contact</a>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/CyrilCartoux" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    <span class="social-text">$ github</span>
-                </a>
-                <a href="https://www.linkedin.com/in/cyril-c-a6a3351a2/" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    <span class="social-text">$ linkedin</span>
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-copyright">> &copy; 2025 UNDEEFINED</p>
+            <p class="footer-copy font-mono">© 2026</p>
         </div>
     </footer>
 
