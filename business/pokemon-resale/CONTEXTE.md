@@ -1,7 +1,7 @@
 # Pokémon — Revente / Partenariat Rob (Krueger933)
 
-**Statut :** accord de principe trouvé, chiffres Rob obtenus, structure tranchée.
-**Dernière MAJ :** 2026-08-10
+**Statut :** accord de principe trouvé, chiffres Rob obtenus, structure tranchée, INPI déposé (dossier J00277191896).
+**Dernière MAJ :** 2026-09-02
 **Fichier maître.** Toute décision, tout chiffre, tout message envoyé à Rob se consigne ici.
 
 ---
@@ -281,8 +281,9 @@ l'acompte ne veut rien. Ça élimine 9 gars sur 10.
 
 ## 8. Points ouverts — à traiter dans l'ordre
 
-- [ ] **1. INPI — ajouter l'achat-revente à la micro. CETTE SEMAINE.** Avant la 1re vente d'amorçage
-      encaissée (§11), pas avant octobre : les ventes d'amorçage sont déjà des ventes pro.
+- [x] **1. INPI — ajouter l'achat-revente à la micro.** ✅ Fait le 2026-09-02, dossier J00277191896
+      (via La Poste Identité Numérique après échecs DocuSign et Yousign — certificats non conformes eIDAS).
+      En attente de traitement par le greffe.
 - [ ] **2. Demander à Rob : combien de cases, à partir de quand ?** Un message, réponse en 24 h. Ce n'est
       pas une prédiction, c'est une question.
 - [ ] **3. Estimer mon CA presta 2026** à ±20 % → headroom réel (§4.5). **Bloquant.**
@@ -485,3 +486,5 @@ comptable supposent un outil en ligne (Indy, Dougs), pas un cabinet classique qu
 | 2026-08-10 | **Question SASU tranchée : rester en micro cette saison**, réévaluation en décembre sur 3 critères (§12). |
 | 2026-08-10 | Plan réputation arrêté (§11) : eBay/Cardmarket démarrent immédiatement, Discord en présence sans vente 4-6 semaines, concours Insta repoussé à octobre et repensé en filtre. |
 | 2026-08-10 | Clarification IR (§4.1) : les 12,3 % sont les cotisations seules, l'IR à 8,7 % du CA vient **en plus, l'année suivante**. Versement libératoire écarté (RFR trop élevé). |
+| 2026-08-18 → 2026-09-02 | **Premières ventes réelles sur Vinted : 536,48 € de CA sur 14 transactions** (10 lots pour 341,49 €, 4 pièces à l'unité pour 194,99 € dont une Charizard V PSA 9 à 165 €). Stratégie de lots pour le fond de collection validée par des données réelles. Décidé de compter ce CA en pile PRO (mélange lots + pièce gradée, pattern trop habituel pour tenir l'argument perso — §3). Provision de ~134 € (25 %) à mettre de côté. |
+| 2026-09-02 | **INPI déposé : achat-revente ajoutée à la micro, dossier J00277191896.** Activité secondaire, activité principale de dev/presta inchangée. Date de début d'activité déclarée rétroactive à la 1re vente réelle, pas à la date de dépôt. En attente de traitement par le greffe. |
