@@ -1,7 +1,7 @@
 # Pokémon — Revente / Partenariat Rob (Krueger933)
 
-**Statut :** accord de principe trouvé, chiffres Rob obtenus, structure tranchée, INPI déposé (dossier J00277191896).
-**Dernière MAJ :** 2026-09-02
+**Statut :** accord de principe trouvé, chiffres Rob obtenus, structure tranchée, **achat-revente officiellement validée par le greffe** (dossier J00277191896).
+**Dernière MAJ :** 2026-09-14
 **Fichier maître.** Toute décision, tout chiffre, tout message envoyé à Rob se consigne ici.
 
 ---
@@ -281,9 +281,12 @@ l'acompte ne veut rien. Ça élimine 9 gars sur 10.
 
 ## 8. Points ouverts — à traiter dans l'ordre
 
-- [x] **1. INPI — ajouter l'achat-revente à la micro.** ✅ Fait le 2026-09-02, dossier J00277191896
-      (via La Poste Identité Numérique après échecs DocuSign et Yousign — certificats non conformes eIDAS).
-      En attente de traitement par le greffe.
+- [x] **1. INPI — ajouter l'achat-revente à la micro.** ✅ **Validé par le greffe le 2026-09-14**, dossier
+      J00277191896 (via La Poste Identité Numérique après échecs DocuSign et Yousign — certificats non
+      conformes eIDAS). Activité officiellement active : "Achat et revente d'articles de collection,
+      notamment jeux de cartes à collectionner scellés ou à l'unité (neufs ou d'occasion), en gros et au
+      détail, à des particuliers et professionnels, par le biais de plateformes de vente en ligne et de
+      vente directe." Activité principale (dev) inchangée.
 - [ ] **2. Demander à Rob : combien de cases, à partir de quand ?** Un message, réponse en 24 h. Ce n'est
       pas une prédiction, c'est une question.
 - [ ] **3. Estimer mon CA presta 2026** à ±20 % → headroom réel (§4.5). **Bloquant.**
@@ -488,3 +491,4 @@ comptable supposent un outil en ligne (Indy, Dougs), pas un cabinet classique qu
 | 2026-08-10 | Clarification IR (§4.1) : les 12,3 % sont les cotisations seules, l'IR à 8,7 % du CA vient **en plus, l'année suivante**. Versement libératoire écarté (RFR trop élevé). |
 | 2026-08-18 → 2026-09-02 | **Premières ventes réelles sur Vinted : 536,48 € de CA sur 14 transactions** (10 lots pour 341,49 €, 4 pièces à l'unité pour 194,99 € dont une Charizard V PSA 9 à 165 €). Stratégie de lots pour le fond de collection validée par des données réelles. Décidé de compter ce CA en pile PRO (mélange lots + pièce gradée, pattern trop habituel pour tenir l'argument perso — §3). Provision de ~134 € (25 %) à mettre de côté. |
 | 2026-09-02 | **INPI déposé : achat-revente ajoutée à la micro, dossier J00277191896.** Activité secondaire, activité principale de dev/presta inchangée. Date de début d'activité déclarée rétroactive à la 1re vente réelle, pas à la date de dépôt. En attente de traitement par le greffe. |
+| 2026-09-14 | **Formalité validée par le greffe du Tribunal de Commerce de Salon-de-Provence.** Achat-revente d'articles de collection officiellement active sur la micro (nom commercial : Studio Sainte Victoire). Premier point bloquant du dossier définitivement clos. Discussion des économiques sur un lot de 20 cases ETB (net 7 700-9 280 € si tout vendu, ~6-7 cases autofinançables pour la collection perso) et sur les UPC (coût 210 €/u, vente 600 €/u, net 264 €/u, marge proportionnellement meilleure que l'ETB, arrivée mi-novembre). |
