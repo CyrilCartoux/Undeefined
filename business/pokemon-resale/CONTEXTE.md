@@ -1,7 +1,9 @@
 # Pokémon — Revente / Partenariat Rob (Krueger933)
 
-**Statut :** accord de principe trouvé, chiffres Rob obtenus, structure tranchée, **achat-revente officiellement validée par le greffe** (dossier J00277191896).
-**Dernière MAJ :** 2026-09-14
+**Statut :** achat-revente officiellement validée (greffe, dossier J00277191896). **Sortie du set 30 ans le
+2026-09-18** — logistique de stock en cours avec Rob (Cartabaffe, Hikaru), prix de mania de lancement sur
+la case entière (1 800-2 000 €) à exploiter tant qu'il tient.
+**Dernière MAJ :** 2026-09-18
 **Fichier maître.** Toute décision, tout chiffre, tout message envoyé à Rob se consigne ici.
 
 ---
@@ -261,6 +263,34 @@ Ne jamais annoncer de prix ferme ni promettre de volume avant que Rob ait confir
 Test de sérieux à 30 secondes : **demander 20 % d'acompte.** Qui veut de l'« illimité » mais refuse
 l'acompte ne veut rien. Ça élimine 9 gars sur 10.
 
+### 6.5 Case entière vs détail — l'arbitrage de lancement
+
+**Découverte du 2026-09-18 (sortie du set 30 ans) : en période de mania de lancement, la case scellée
+entière peut valoir plus que la somme des ETB vendus au détail.** Ça inverse temporairement la règle d'or
+du §4.3 — à vérifier à chaque nouveau lancement, pas une fois pour toutes.
+
+Données réelles au lancement : coût Rob 800 €/case, case revendue **1 800-2 000 € entre particuliers /
+Cardmarket**, Rob lui-même vend à 1 800-1 900 € (son coût : 600 €/case chez Cartabaffe).
+
+| Mode | CA | Net | Travail |
+|---|---|---|---|
+| Détail (10 ETB à 150-160 €) | 1 500-1 600 | 385-464 € | Déballage + 10 photos + 10 envois |
+| **Case entière à 1 700 €** | 1 700 | **543 €** | Zéro déballage, 1 envoi |
+| **Case entière à 2 000 €** | 2 000 | **780 €** | Zéro déballage, 1 envoi |
+
+**Règle pratique : comparer le prix de case entière du marché du jour à `coût × 1,27` (seuil, §4.3) ET à la
+somme du détail (§6.1). Vendre selon celui des deux qui donne le plus de net — et privilégier le moins de
+travail à net égal.**
+
+⚠️ **C'est une fenêtre temporaire, pas un nouveau régime.** Le prix de mania de lancement se tasse
+généralement vers le prix de gros classique (1 100-1 300 €, cf. §4.3) dès que l'offre se normalise (§7,
+risque de normalisation de l'appro). Vendre vite les premières cases pendant que le prix tient ; basculer
+vers le détail dès que le prix de case entière retombe sous le seuil de rentabilité du détail.
+
+Point relationnel à vérifier avec Rob (pas bloquant, juste par transparence) : confirmer qu'il est OK avec
+de la revente en case entière à un prix proche du sien, vu son volume (Cartabaffe, dizaines de palettes) ce
+n'est probablement pas un problème — mais mieux vaut le dire que le laisser découvrir.
+
 ---
 
 ## 7. Risques — et ce qu'on fait
@@ -287,8 +317,9 @@ l'acompte ne veut rien. Ça élimine 9 gars sur 10.
       notamment jeux de cartes à collectionner scellés ou à l'unité (neufs ou d'occasion), en gros et au
       détail, à des particuliers et professionnels, par le biais de plateformes de vente en ligne et de
       vente directe." Activité principale (dev) inchangée.
-- [ ] **2. Demander à Rob : combien de cases, à partir de quand ?** Un message, réponse en 24 h. Ce n'est
-      pas une prédiction, c'est une question.
+- [x] **2. Combien de cases, à partir de quand ?** ✅ Réglé de fait via logistique en direct : palette 30
+      ans récupérée par Rob le 2026-09-18, ~20 cases le soir même, remise de stock à Toulouse la semaine
+      suivante. Rob travaille avec Cartabaffe (accès dizaines de palettes, contact Asmodee) et Hikaru.
 - [ ] **3. Estimer mon CA presta 2026** à ±20 % → headroom réel (§4.5). **Bloquant.**
 - [ ] **4. Reconfirmer le prix figé** par écrit (hausse pour moi).
 - [ ] **5. Border les invendus** : délai de reprise, qui paie le retour, état accepté.
@@ -492,3 +523,4 @@ comptable supposent un outil en ligne (Indy, Dougs), pas un cabinet classique qu
 | 2026-08-18 → 2026-09-02 | **Premières ventes réelles sur Vinted : 536,48 € de CA sur 14 transactions** (10 lots pour 341,49 €, 4 pièces à l'unité pour 194,99 € dont une Charizard V PSA 9 à 165 €). Stratégie de lots pour le fond de collection validée par des données réelles. Décidé de compter ce CA en pile PRO (mélange lots + pièce gradée, pattern trop habituel pour tenir l'argument perso — §3). Provision de ~134 € (25 %) à mettre de côté. |
 | 2026-09-02 | **INPI déposé : achat-revente ajoutée à la micro, dossier J00277191896.** Activité secondaire, activité principale de dev/presta inchangée. Date de début d'activité déclarée rétroactive à la 1re vente réelle, pas à la date de dépôt. En attente de traitement par le greffe. |
 | 2026-09-14 | **Formalité validée par le greffe du Tribunal de Commerce de Salon-de-Provence.** Achat-revente d'articles de collection officiellement active sur la micro (nom commercial : Studio Sainte Victoire). Premier point bloquant du dossier définitivement clos. Discussion des économiques sur un lot de 20 cases ETB (net 7 700-9 280 € si tout vendu, ~6-7 cases autofinançables pour la collection perso) et sur les UPC (coût 210 €/u, vente 600 €/u, net 264 €/u, marge proportionnellement meilleure que l'ETB, arrivée mi-novembre). |
+| 2026-09-18 | **Sortie du set 30 ans. Rob au téléphone : réseau élargi (Cartabaffe — accès dizaines de palettes, contact Asmodee — et Hikaru), logistique en direct (palette du jour, ~20 cases le soir, remise à Toulouse la semaine prochaine).** Découverte de marché majeure : case entière revendue 1 800-2 000 € (mania de lancement), Rob vend à 1 800-1 900 € (son coût 600 €/case), moi à 800 €/case. Ça inverse temporairement la règle du détail : flip en case entière (net 543-780 €, zéro travail) bat le détail par ETB (net 385-464 €, 10× le travail) tant que le prix de mania tient (§6.5). Point ouvert §8.2 réglé de fait. |
